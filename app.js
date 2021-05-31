@@ -9,4 +9,9 @@ app.use(bodyParser.urlencoded({
 }))
 app.use(bodyParser.json());
 
+
+var assets = require("./routes/assets");
+
+app.use("/assets",assets);
+
 module.exports = app;
