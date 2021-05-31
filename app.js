@@ -1,17 +1,12 @@
-
 var express = require('express');
 var path = require('path');
-var bodyparser = require('body-parser');
+var bodyParser = require('body-parser');
 
 var app = express();
 
-app.use(bodyparser.urlenconded({
+app.use(bodyParser.urlencoded({
   extended:true,
 }))
-app.use(bodyparser.json());
+app.use(bodyParser.json());
 
-var assets = require(".routes/assets")
-
-app.use("/assets",assets);
-
-module.exports=app;
+module.exports = app;

@@ -8,3 +8,5 @@ assets=[
     app.use("/img",express.static(__dirname+"/../public/images")),
     app.use("/txt",express.static(__dirname+"/../public/documentation")),
 ]
+
+module.exports= assets

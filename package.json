@@ -1,12 +1,11 @@
 {
-  "name": "servidor-backend-actividad-1",
+  "name": "servidor1",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parse": "^0.1.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
