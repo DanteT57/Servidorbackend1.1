@@ -10,4 +10,8 @@ app.use(bodyparser.urlenconded({
 }))
 app.use(bodyparser.json());
 
+var assets = require(".routes/assets")
+
+app.use("/assets",assets);
+
 module.exports=app;
